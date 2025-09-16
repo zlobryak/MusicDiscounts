@@ -7,8 +7,7 @@ fun main() {
     val standartDiscount =
         if (purchasePrice > 0 && purchasePrice <= 1000) purchasePrice
         else if (purchasePrice > 1000 && purchasePrice <= 10_000) purchasePrice - 100
-        else if (purchasePrice > 10_000) purchasePrice * 0.95
-        else 0.0
+        else  purchasePrice * 0.95
     println(
         String.format(
             "%.2f",
